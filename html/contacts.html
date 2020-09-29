@@ -13,12 +13,19 @@
     </head>
     <body>
         <!-- Nav bar -->
-        <div>
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">My Projects</a>
-            <a href="contacts.html">Social Media</a>
-        </div>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-md bg-dark">
+            <a class="navbar-brand" href="index.html">William Wong</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="aboutme.html">About Me</a>
+                <a class="nav-item nav-link" href="projects.html">My Projects</a>
+                <a class="nav-item active nav-link" href="contacts.html">Social Media</a>
+            </div>
+            </div>
+        </nav>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
