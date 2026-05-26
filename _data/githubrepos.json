@@ -1,0 +1,15 @@
+{
+    "lastUpdated": "2026-05-26T17:33:00.000Z",
+    "repos": [
+        {
+            "name":"CMPUTLab_201",
+            "description":"test description for repo",
+            "languages": [{"language":"python","bytes":20000},{"language":"C++","bytes":1000}]
+        },
+        {
+            "name":"CMPUTLab_202",
+            "description":"just another repo",
+            "languages": [{"language":"assembly","bytes":10000}]
+        }
+    ]
+}

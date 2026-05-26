@@ -5,5 +5,22 @@ permalink: /projects/
 ---
 
 This is a page for my projects in github.
+<!-- 
+We cannot use an API to update data in a static site without leaking the API key.
+Therefore we must preload the data from Github, and use Github Action Workflows to update the data
+on a schedule.
+ -->
+<h3>Last Updated: {{ site.data.githubrepos.lastUpdated | date: "%B %d, %Y" }}</h3>
 
-<script src="/assets/js/github.js"></script>
+{% for item in site.data.githubrepos.repos %}
+    <h4>{{ item.name }}</h4>
+    <p>{{ item.description }}</p>
+    <ul>
+        {% for l in item.languages %}
+            <li>
+                <h5>{{ l.language }}</h5>
+                {{ l.bytes }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
