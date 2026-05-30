@@ -1,0 +1,43 @@
+---
+---
+
+.projects{
+    background-color: aqua;
+}
+
+.repo{
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    width: 50%;
+    min-width: 300px;
+}
+
+.repo-title {
+    font-weight: 600;
+    color: black;
+}
+
+.repo-title:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.repo-icon {
+    height: 25px;
+}
+
+.repo-desc {
+    margin-block: 10px;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.language-bar{
+    display: flex;
+    height: 5px;
+}
+
+

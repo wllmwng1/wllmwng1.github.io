@@ -3,11 +3,13 @@
     "repos": [
         {
             "name":"CMPUTLab_201",
+            "link":"github.com",
             "description":"test description for repo",
             "languages": [{"language":"python","bytes":20000},{"language":"C++","bytes":1000}]
         },
         {
             "name":"CMPUTLab_202",
+            "link":"google.com",
             "description":"just another repo",
             "languages": [{"language":"assembly","bytes":10000}]
         }
