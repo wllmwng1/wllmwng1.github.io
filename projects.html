@@ -16,42 +16,37 @@ on a schedule.
     <!-- Main project container -->
     Projects
     <!-- Example repo div -->
-    <div class="repo">
-        <div style="display: grid; grid-auto-flow: column; grid-template-columns: 25px 1fr; align-items: center; gap: 10px;">
-            <img class="repo-icon" src="{{ '/assets/images/Python.png' | relative_url }}">
-            <a class="repo-title">Repo Title/Link</a>
-        </div>
-        <div class="repo-desc">Description</div>
-        <div class="language-bar">
-            <div style="width: 50%; background-color: bisque;"></div>
-            <div style="width: 30%; background-color: chocolate;"></div>
-            <div style="width: 20%; background-color:  salmon;"></div>
-        </div>
-    </div>
-    {% for item in site.data.githubrepos.repos %}
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;padding: 10px;">
         <div class="repo">
-            <div style="display: grid; grid-auto-flow: column; grid-template-columns: 25px 1fr; align-items: center; gap: 10px;">
+            <div class="repo-header">
                 <img class="repo-icon" src="{{ '/assets/images/Python.png' | relative_url }}">
-                <a class="repo-title">{{ item.name }}</a>
+                <a class="repo-title">Repo Title/Link</a>
             </div>
-            <div class="repo-desc">{{ item.description }}</div>
+            <div class="repo-desc">Description</div>
             <div class="language-bar">
                 <div style="width: 50%; background-color: bisque;"></div>
                 <div style="width: 30%; background-color: chocolate;"></div>
                 <div style="width: 20%; background-color:  salmon;"></div>
             </div>
         </div>
-    {% endfor %}
-</div>
-{% for item in site.data.githubrepos.repos %}
-    <h4>{{ item.name }}</h4>
-    <p>{{ item.description }}</p>
-    <ul>
-        {% for l in item.languages %}
-            <li>
-                <h5>{{ l.language }}</h5>
-                {{ l.bytes }}
-            </li>
+        {% for item in site.data.githubrepos.repos %}
+            {% assign total_float = item.total | times: 1.0 %}
+            <div class="repo">
+                <div class="repo-header">
+                    <img class="repo-icon" src="{{ '/assets/images/Python.png' | relative_url }}">
+                    <a class="repo-title">{{ item.name }}</a>
+                </div>
+                <div class="repo-desc">{{ item.description }}</div>
+                <div class="language-bar">
+                    {% for language in item.languages %}
+                        {% assign lang = site.data.languages | where: "name", language.language | first %}
+                        <div style="
+                        width: {{ language.bytes | divided_by: total_float | round: 2 | times: 100 }}%;
+                        background-color: {{ lang.color }};"></div>
+                    {% endfor %}
+                </div>
+                
+            </div>
         {% endfor %}
-    </ul>
-{% endfor %}
+    </div>
+</div>
