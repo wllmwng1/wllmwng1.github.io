@@ -3,7 +3,7 @@
     "repos": [
         {
             "name":"CMPUTLab_201",
-            "link":"github.com",
+            "link":"https://www.github.com",
             "description":"test description for repo",
             "languages": [{"language":"Python","bytes":20000},{"language":"C#","bytes":1000}],
             "total": 21000

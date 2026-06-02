@@ -2,8 +2,8 @@
   icon: /assets/images/Python.png
   color: "#3572A5"
 - name: C#
-  icon: /assets/images/Python.png
+  icon: /assets/images/C#.png
   color: "#178600"
 - name: Assembly
-  icon: /assets/images/Python.png
+  icon: /assets/images/Assembly.png
   color: "#6E4C13"

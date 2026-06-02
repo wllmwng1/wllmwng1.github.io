@@ -31,10 +31,11 @@ on a schedule.
         </div>
         {% for item in site.data.githubrepos.repos %}
             {% assign total_float = item.total | times: 1.0 %}
+            {% assign main_lang = site.data.languages | where: "name", item.languages[0].language | first %}
             <div class="repo">
                 <div class="repo-header">
-                    <img class="repo-icon" src="{{ '/assets/images/Python.png' | relative_url }}">
-                    <a class="repo-title">{{ item.name }}</a>
+                    <img class="repo-icon" src="{{ main_lang.icon | relative_url }}">
+                    <a class="repo-title" href="{{ item.link }}">{{ item.name }}</a>
                 </div>
                 <div class="repo-desc">{{ item.description }}</div>
                 <div class="language-bar">
@@ -42,7 +43,14 @@ on a schedule.
                         {% assign lang = site.data.languages | where: "name", language.language | first %}
                         <div style="
                         width: {{ language.bytes | divided_by: total_float | round: 2 | times: 100 }}%;
-                        background-color: {{ lang.color }};"></div>
+                        background-color: {{ lang.color }};"
+                        class = "language-bar-parent">
+                            <div class="language-bar-child">
+                                <div style="opacity: 1;">
+                                    {{ lang.name }}: {{ language.bytes | divided_by: total_float | round: 2 | times: 100 }}%
+                                </div>
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
                 
