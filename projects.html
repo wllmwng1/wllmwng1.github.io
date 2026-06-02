@@ -3,32 +3,17 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-
-This is a page for my projects in github.
 <!-- 
 We cannot use an API to update data in a static site without leaking the API key.
 Therefore we must preload the data from Github, and use Github Action Workflows to update the data
 on a schedule.
  -->
 <link id="custom-stylesheet" rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-<h3>Last Updated: {{ site.data.githubrepos.lastUpdated | date: "%B %d, %Y" }}</h3>
 <div class="projects">
     <!-- Main project container -->
     Projects
     <!-- Example repo div -->
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;padding: 10px;">
-        <div class="repo">
-            <div class="repo-header">
-                <img class="repo-icon" src="{{ '/assets/images/Python.png' | relative_url }}">
-                <a class="repo-title">Repo Title/Link</a>
-            </div>
-            <div class="repo-desc">Description</div>
-            <div class="language-bar">
-                <div style="width: 50%; background-color: bisque;"></div>
-                <div style="width: 30%; background-color: chocolate;"></div>
-                <div style="width: 20%; background-color:  salmon;"></div>
-            </div>
-        </div>
         {% for item in site.data.githubrepos.repos %}
             {% assign total_float = item.total | times: 1.0 %}
             {% assign main_lang = site.data.languages | where: "name", item.languages[0].language | first %}
@@ -56,5 +41,8 @@ on a schedule.
                 
             </div>
         {% endfor %}
+    </div>
+    <div class="project-update">
+        Last Updated: {{ site.data.githubrepos.lastUpdated | date: "%B %d, %Y" }}
     </div>
 </div>
