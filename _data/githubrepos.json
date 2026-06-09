@@ -1,19 +1,490 @@
 {
-    "lastUpdated": "2026-05-26T17:33:00.000Z",
+    "lastUpdated": "2026-06-09T22:04:42.598Z",
     "repos": [
         {
-            "name":"CMPUTLab_201",
-            "link":"https://www.github.com",
-            "description":"test description for repo",
-            "languages": [{"language":"Python","bytes":20000},{"language":"C#","bytes":1000}],
-            "total": 21000
+            "name": "Project2",
+            "link": "https://github.com/CMPUT291F18P2/Project2",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 6673
+                }
+            ],
+            "total": 6673
         },
         {
-            "name":"CMPUTLab_202",
-            "link":"google.com",
-            "description":"just another repo",
-            "languages": [{"language":"Assembly","bytes":10000}],
-            "total": 10000
+            "name": "web-app-ci-cd-with-travis-ci-wllmwng1",
+            "link": "https://github.com/cmput401-fall2018/web-app-ci-cd-with-travis-ci-wllmwng1",
+            "description": "web-app-ci-cd-with-travis-ci-wllmwng1 created by GitHub Classroom",
+            "languages": [
+                {
+                    "Python": 69328
+                },
+                {
+                    "HTML": 1137
+                }
+            ],
+            "total": 70465
+        },
+        {
+            "name": "CMPUT291MINIPROJ1",
+            "link": "https://github.com/jtfwong/CMPUT291MINIPROJ1",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 18870
+                }
+            ],
+            "total": 18870
+        },
+        {
+            "name": "CMPUT229_Lab1",
+            "link": "https://github.com/wllmwng1/CMPUT229_Lab1",
+            "description": null,
+            "languages": [
+                {
+                    "Assembly": 24565
+                },
+                {
+                    "Shell": 4440
+                },
+                {
+                    "Python": 2769
+                }
+            ],
+            "total": 31774
+        },
+        {
+            "name": "CMPUT229_Lab2",
+            "link": "https://github.com/wllmwng1/CMPUT229_Lab2",
+            "description": null,
+            "languages": [
+                {
+                    "Assembly": 30475
+                }
+            ],
+            "total": 30475
+        },
+        {
+            "name": "CMPUT229_Lab3",
+            "link": "https://github.com/wllmwng1/CMPUT229_Lab3",
+            "description": null,
+            "languages": [
+                {
+                    "Assembly": 70672
+                },
+                {
+                    "Python": 13958
+                },
+                {
+                    "Shell": 6337
+                }
+            ],
+            "total": 90967
+        },
+        {
+            "name": "CMPUT229_Lab4",
+            "link": "https://github.com/wllmwng1/CMPUT229_Lab4",
+            "description": null,
+            "languages": [
+                {
+                    "Assembly": 163964
+                },
+                {
+                    "Shell": 186
+                }
+            ],
+            "total": 164150
+        },
+        {
+            "name": "CMPUT229_Lab5",
+            "link": "https://github.com/wllmwng1/CMPUT229_Lab5",
+            "description": null,
+            "languages": [
+                {
+                    "Assembly": 60465
+                },
+                {
+                    "Python": 7810
+                },
+                {
+                    "Shell": 4096
+                }
+            ],
+            "total": 72371
+        },
+        {
+            "name": "CMPUT275_PacMan",
+            "link": "https://github.com/wllmwng1/CMPUT275_PacMan",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 12953
+                }
+            ],
+            "total": 12953
+        },
+        {
+            "name": "CMPUT291_Assignment2",
+            "link": "https://github.com/wllmwng1/CMPUT291_Assignment2",
+            "description": null,
+            "languages": [],
+            "total": 0
+        },
+        {
+            "name": "CMPUT291_MiniProject1",
+            "link": "https://github.com/wllmwng1/CMPUT291_MiniProject1",
+            "description": null,
+            "languages": [],
+            "total": 0
+        },
+        {
+            "name": "CMPUT291_MiniProject2",
+            "link": "https://github.com/wllmwng1/CMPUT291_MiniProject2",
+            "description": null,
+            "languages": [
+                {
+                    "HTML": 93330898
+                },
+                {
+                    "C": 25850483
+                },
+                {
+                    "Java": 9456776
+                },
+                {
+                    "Tcl": 4029602
+                },
+                {
+                    "C#": 2389300
+                },
+                {
+                    "C++": 1589472
+                },
+                {
+                    "Python": 779209
+                },
+                {
+                    "Perl": 589608
+                },
+                {
+                    "Roff": 436235
+                },
+                {
+                    "Shell": 333512
+                },
+                {
+                    "SWIG": 305690
+                },
+                {
+                    "XS": 216433
+                },
+                {
+                    "Makefile": 133450
+                },
+                {
+                    "CSS": 106659
+                },
+                {
+                    "JavaScript": 79598
+                },
+                {
+                    "OpenEdge ABL": 75831
+                },
+                {
+                    "Yacc": 61640
+                },
+                {
+                    "Thrift": 32367
+                },
+                {
+                    "M4": 23976
+                },
+                {
+                    "Erlang": 22675
+                },
+                {
+                    "DTrace": 22649
+                },
+                {
+                    "Swift": 22142
+                },
+                {
+                    "ASP.NET": 21310
+                },
+                {
+                    "Awk": 9570
+                },
+                {
+                    "Batchfile": 5016
+                },
+                {
+                    "R": 4009
+                },
+                {
+                    "PHP": 1262
+                },
+                {
+                    "Assembly": 912
+                },
+                {
+                    "Raku": 88
+                }
+            ],
+            "total": 139930372
+        },
+        {
+            "name": "CMPUT296_Assignment1",
+            "link": "https://github.com/wllmwng1/CMPUT296_Assignment1",
+            "description": null,
+            "languages": [
+                {
+                    "C#": 3934163
+                },
+                {
+                    "Objective-C": 11913
+                },
+                {
+                    "Python": 6639
+                },
+                {
+                    "ShaderLab": 3081
+                },
+                {
+                    "HLSL": 2843
+                }
+            ],
+            "total": 3958639
+        },
+        {
+            "name": "CMPUT296_Assignment2",
+            "link": "https://github.com/wllmwng1/CMPUT296_Assignment2",
+            "description": null,
+            "languages": [
+                {
+                    "C#": 6906593
+                },
+                {
+                    "Objective-C": 84248
+                },
+                {
+                    "Python": 6639
+                },
+                {
+                    "ShaderLab": 3081
+                },
+                {
+                    "HLSL": 2843
+                },
+                {
+                    "C": 581
+                }
+            ],
+            "total": 7003985
+        },
+        {
+            "name": "CMPUT296_Assignment3",
+            "link": "https://github.com/wllmwng1/CMPUT296_Assignment3",
+            "description": null,
+            "languages": [
+                {
+                    "C#": 4011114
+                },
+                {
+                    "Objective-C": 11913
+                },
+                {
+                    "Python": 6639
+                },
+                {
+                    "ShaderLab": 3081
+                },
+                {
+                    "HLSL": 2843
+                }
+            ],
+            "total": 4035590
+        },
+        {
+            "name": "CMPUT296_Assignment4",
+            "link": "https://github.com/wllmwng1/CMPUT296_Assignment4",
+            "description": null,
+            "languages": [
+                {
+                    "C#": 4023643
+                },
+                {
+                    "Objective-C": 11913
+                },
+                {
+                    "ShaderLab": 3081
+                },
+                {
+                    "HLSL": 2843
+                }
+            ],
+            "total": 4041480
+        },
+        {
+            "name": "CMPUT366_Assignment1-K-armedBandit",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment1-K-armedBandit",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 39418
+                },
+                {
+                    "R": 838
+                }
+            ],
+            "total": 40256
+        },
+        {
+            "name": "CMPUT366_Assignment3",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment3",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 42656
+                }
+            ],
+            "total": 42656
+        },
+        {
+            "name": "CMPUT366_Assignment4",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment4",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 26719
+                }
+            ],
+            "total": 26719
+        },
+        {
+            "name": "CMPUT366_Assignment5",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment5",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 20332
+                }
+            ],
+            "total": 20332
+        },
+        {
+            "name": "CMPUT366_Assignment6",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment6",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 28317
+                }
+            ],
+            "total": 28317
+        },
+        {
+            "name": "CMPUT366_Assignment7",
+            "link": "https://github.com/wllmwng1/CMPUT366_Assignment7",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 19786
+                }
+            ],
+            "total": 19786
+        },
+        {
+            "name": "CMPUT455_Assignment3",
+            "link": "https://github.com/wllmwng1/CMPUT455_Assignment3",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 98031
+                }
+            ],
+            "total": 98031
+        },
+        {
+            "name": "CMPUT455_Assignment_2",
+            "link": "https://github.com/wllmwng1/CMPUT455_Assignment_2",
+            "description": null,
+            "languages": [
+                {
+                    "Python": 67067
+                },
+                {
+                    "HTML": 18580
+                }
+            ],
+            "total": 85647
+        },
+        {
+            "name": "CountBook",
+            "link": "https://github.com/wllmwng1/CountBook",
+            "description": null,
+            "languages": [],
+            "total": 0
+        },
+        {
+            "name": "Dinosaur-Game",
+            "link": "https://github.com/wllmwng1/Dinosaur-Game",
+            "description": "Game used with Unity.",
+            "languages": [
+                {
+                    "C#": 5213
+                }
+            ],
+            "total": 5213
+        },
+        {
+            "name": "FillerCreepForAndroid",
+            "link": "https://github.com/wllmwng1/FillerCreepForAndroid",
+            "description": "A Game that Attempts to Demo MVC for Android",
+            "languages": [
+                {
+                    "Java": 32977
+                }
+            ],
+            "total": 32977
+        },
+        {
+            "name": "git_demo3",
+            "link": "https://github.com/wllmwng1/git_demo3",
+            "description": "Lab 1",
+            "languages": [],
+            "total": 0
+        },
+        {
+            "name": "lonelyTwitter",
+            "link": "https://github.com/wllmwng1/lonelyTwitter",
+            "description": "Lonely Twitter demo for CSCI 301",
+            "languages": [
+                {
+                    "HTML": 346774
+                },
+                {
+                    "Java": 13196
+                },
+                {
+                    "CSS": 12842
+                },
+                {
+                    "JavaScript": 827
+                }
+            ],
+            "total": 373639
+        },
+        {
+            "name": "LonelyTwitterRefactoring",
+            "link": "https://github.com/wllmwng1/LonelyTwitterRefactoring",
+            "description": null,
+            "languages": [
+                {
+                    "Java": 8956
+                }
+            ],
+            "total": 8956
         }
     ]
 }
