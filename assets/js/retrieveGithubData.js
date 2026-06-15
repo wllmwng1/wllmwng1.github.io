@@ -1,7 +1,7 @@
 import { argv,env } from 'node:process';
 import fs from 'node:fs'
 import { Octokit,App } from "octokit";
-import 'dotenv/config';
+// import 'dotenv/config';
 
 async function parseJSON(octokit,response) {
     const repos = response.data;
@@ -59,14 +59,15 @@ async function retrieveLanguageData(octokit, repo) {
 
 function main() {
     argv.forEach((val,index) => {
-    console.log(`${index}: ${val}`);
+    // console.log(`${index}: ${val}`);
     });
 
     if (argv.length != 3) {
         throw Error('There is an incorrect number of arguments');
     }
 
-    const auth_token = process.env.API_KEY;
+    const auth_token = argv[2];
+    // const auth_token = process.env.API_KEY;
 
     const octokit = new Octokit({auth: auth_token });
 

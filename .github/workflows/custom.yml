@@ -1,0 +1,25 @@
+name: Update data and redeploy Jekyll site to Pages
+on: 
+  workflow_dispatch:
+    inputs:
+      APIKey:
+        description: 'Access Token'
+        required: true
+        type: string
+permissions:
+  contents: read
+  pages: write
+jobs:
+  retrieve_data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+      - name: Install dependencies
+        run: npm install octokit
+      - name: Retrieve Data from Gitub API
+        run: node assets/js/retrieveGithubData.js ${{ inputs.APIKey }}
