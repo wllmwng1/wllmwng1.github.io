@@ -1,0 +1,42 @@
+--- 
+--- 
+.company {
+    display: flex;
+    align-items: center;
+}
+.company-icon {
+    height: 200px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+
+.company-info::before {
+    height: 75%;
+    border-left: solid 1px lightgray;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    content: ''
+}
+
+.company-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+.company-time {
+    font-size: .875rem;
+    font-weight: 400;
+    color: grey;
+}
+
+.comapany-desc {
+    font-weight: 400;
+}
