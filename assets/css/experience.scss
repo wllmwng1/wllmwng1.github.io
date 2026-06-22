@@ -3,9 +3,11 @@
 .company {
     display: flex;
     align-items: center;
+    min-height: 200px;
 }
 .company-icon {
-    height: 200px;
+    width: 200px;
+    padding: 10px;
 }
 
 .company-info {
@@ -16,7 +18,7 @@
 }
 
 .company-info::before {
-    height: 75%;
+    height: 150px;
     border-left: solid 1px lightgray;
     position: absolute;
     left: 0px;
