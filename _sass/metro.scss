@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// Define common attributes for the whole website.
+
+// Base font details
+$base-font-family: Helvetica, Arial, sans-serif !default;
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+
+// Use this spacing unit to help standardize the margins and padding
+$spacing-unit: 8px !default;
+
+// Color definitions
+$text-color: #353237 !default;
+$background-color: #e9e9e9 !default;
+// This color could be changed to different colors based on the section/page, but this should be the default
+$brand-color: #d5c16d !default;
+
+// Width of content area
+$content-width: 1000px !default;
+
+// For use in media queries
+$mobile: 600px !default;
+// I'm not sure if I want to use this one
+$laptop: 800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Possible use of mixin
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+@import "metro/base";
